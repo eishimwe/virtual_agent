@@ -9,6 +9,8 @@
         <div class="price-grid">
             <div class="col-sm-4 price-top">
                 <h4>City</h4>
+
+                {!! Form::select('suburb',['0' => 'Select City'],0,['class' => 'in-drop' ,'id' => 'suburb']) !!}
                 <select class="in-drop">
                     <option>Select City</option>
                     <option>Bangkok</option>
