@@ -10,29 +10,8 @@
             <div class="col-sm-4 price-top">
                 <h4>City</h4>
 
-                {!! Form::select('suburb',['0' => 'Select City'],0,['class' => 'in-drop' ,'id' => 'suburb']) !!}
-                <select class="in-drop">
-                    <option>Select City</option>
-                    <option>Bangkok</option>
-                    <option>Tokyo</option>
-                    <option>London</option>
-                    <option>Paris</option>
-                    <option>Dhubai</option>
-                    <option>New Jerrsey</option>
-                    <option>Hongkong</option>
-                    <option>New York</option>
-                    <option>Rome</option>
-                    <option>Sydney</option>
-                    <option>Florence</option>
-                    <option>Istanbul</option>
-                    <option>Brezil</option>
-                    <option>Canda</option>
-                    <option>Malaysia</option>
-                    <option>Singapore</option>
-                    <option>Taiwan</option>
-                    <option>Spain</option>
-                    <option>More</option>
-                </select>
+                {!! Form::select('suburb',$suburbs,0,['class' => 'in-drop' ,'id' => 'suburb']) !!}
+
             </div>
             <div class="col-sm-4 price-top">
                 <h4>Category</h4>

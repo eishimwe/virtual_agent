@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Suburb;
 
 class HomeController extends Controller
 {
@@ -15,7 +16,9 @@ class HomeController extends Controller
 
     function search() {
 
-        return view('search.search');
+        $suburbs = Suburb::pluck('name','id');
+        return view('search.search',compact('suburbs'));
+
     }
 
 }

@@ -8,9 +8,5 @@ use App\Suburb;
 
 class SuburbController extends Controller
 {
-    function getSuburbsList(){
 
-
-
-    }
 }
