@@ -1,181 +1,298 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Real Home A Real Estate Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <!--menu-->
+    <script src="js/scripts.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <!--//menu-->
+    <!--theme-style-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//theme-style-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Business Casual - Start Bootstrap Theme</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="{{ asset('css/business-casual.css') }}" rel="stylesheet">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Real Home Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- slide -->
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+            $("#slider").responsiveSlides({
+                auto: true,
+                speed: 500,
+                namespace: "callbacks",
+                pager: true,
+            });
+        });
+    </script>
 </head>
-
-<body>
-
-<div class="brand">Business Casual</div>
-<div class="address-bar">3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890</div>
-
-<!-- Navigation -->
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-            <a class="navbar-brand" href="index.html">Business Casual</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="blog.html">Blog</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
+<body >
+<!--header-->
+<div class="navigation">
+    <div class="container-fluid">
+        <nav class="pull">
+            <ul>
+                <li><a  href="index.html">Home</a></li>
+                <li><a  href="about.html">About Us</a></li>
+                <li><a  href="blog.html">Blog</a></li>
+                <li><a  href="terms.html">Terms</a></li>
+                <li><a  href="privacy.html">Privacy</a></li>
+                <li><a  href="contact.html">Contact</a></li>
             </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+        </nav>
     </div>
-    <!-- /.container -->
-</nav>
+</div>
 
-<div class="container">
+<div class="header">
+    <div class="container">
+        <!--logo-->
+        <div class="logo">
+            <h1><a href="{{ url('/') }}">REAL HOME</a></h1>
+        </div>
+        <!--//logo-->
+        <div class="top-nav">
+            <ul class="right-icons">
+                <li><span ><i class="glyphicon glyphicon-phone"> </i>+1384 757 546</span></li>
+                <li><a  href="login.html"><i class="glyphicon glyphicon-user"> </i>Login</a></li>
+                <li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a></li>
 
-    <div class="row">
-        <div class="box">
-            <div class="col-lg-12 text-center">
-                <div id="carousel-example-generic" class="carousel slide">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators hidden-xs">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    </ol>
+            </ul>
+            <div class="nav-icon">
+                <div class="hero fa-navicon fa-2x nav_slide_button" id="hero">
+                    <a href="#"><i class="glyphicon glyphicon-menu-hamburger"></i> </a>
+                </div>
+                <!---
+                <a href="#" class="right_bt" id="activator"><i class="glyphicon glyphicon-menu-hamburger"></i>  </a>
+            --->
+            </div>
+            <div class="clearfix"> </div>
+            <!---pop-up-box---->
 
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img class="img-responsive img-full" src="img/slide-1.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img class="img-responsive img-full" src="img/slide-2.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img class="img-responsive img-full" src="img/slide-3.jpg" alt="">
+            <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+            <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+            <!---//pop-up-box---->
+            <div id="small-dialog" class="mfp-hide">
+                <!----- tabs-box ---->
+                <div class="sap_tabs">
+                    <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+                        <ul class="resp-tabs-list">
+                            <li class="resp-tab-item " aria-controls="tab_item-0" role="tab"><span>All Homes</span></li>
+                            <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>For Sale</span></li>
+                            <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>For Rent</span></li>
+                            <div class="clearfix"></div>
+                        </ul>
+                        <div class="resp-tabs-container">
+                            <h2 class="resp-accordion resp-tab-active" role="tab" aria-controls="tab_item-0"><span class="resp-arrow"></span>All Homes</h2><div class="tab-1 resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0" style="display:block">
+                                <div class="facts">
+                                    <div class="login">
+                                        <input type="text" value="Search Address, Neighborhood, City or Zip" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Address, Neighborhood, City or Zip';}">
+                                        <input type="submit" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow"></span>For Sale</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+                                <div class="facts">
+                                    <div class="login">
+                                        <input type="text" value="Search Address, Neighborhood, City or Zip" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Address, Neighborhood, City or Zip';}">
+                                        <input type="submit" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="resp-accordion" role="tab" aria-controls="tab_item-2"><span class="resp-arrow"></span>For Rent</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+                                <div class="facts">
+                                    <div class="login">
+                                        <input type="text" value="Search Address, Neighborhood, City or Zip" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search Address, Neighborhood, City or Zip';}">
+                                        <input type="submit" value="">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                        $(document).ready(function () {
+                            $('#horizontalTab').easyResponsiveTabs({
+                                type: 'default', //Types: default, vertical, accordion
+                                width: 'auto', //auto or any width like 600px
+                                fit: true   // 100% fit in a container
+                            });
+                        });
+                    </script>
+                </div>
+            </div>
+            <script>
+                $(document).ready(function() {
+                    $('.popup-with-zoom-anim').magnificPopup({
+                        type: 'inline',
+                        fixedContentPos: false,
+                        fixedBgPos: true,
+                        overflowY: 'auto',
+                        closeBtnInside: true,
+                        preloader: false,
+                        midClick: true,
+                        removalDelay: 300,
+                        mainClass: 'my-mfp-zoom-in'
+                    });
 
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                        <span class="icon-prev"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                        <span class="icon-next"></span>
+                });
+            </script>
+
+
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<!--//-->
+<div class=" header-right">
+    <div class=" banner">
+        <div class="slider">
+            <div class="callbacks_container">
+                <ul class="rslides" id="slider">
+                    <li>
+                        <div class="banner1">
+                            <div class="caption">
+                                <h3><span>vivam</span>us site</h3>
+                                <p>Nunc dignissim risus idi</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="banner2">
+                            <div class="caption">
+                                <h3><span>vivam</span>us site</h3>
+                                <p>Nunc dignissim risus idi</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="banner3">
+                            <div class="caption">
+                                <h3><span>vivam</span>us site</h3>
+                                <p>Nunc dignissim risus idi</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--header-bottom-->
+<div class="banner-bottom-top">
+    <div class="container">
+        <div class="bottom-header">
+            <div class="header-bottom">
+                <div class=" bottom-head">
+                    <a href="{{ url('search') }}">
+                        <div class="buy-media">
+                            <i class="buy"> </i>
+                            <h6>Buy</h6>
+                        </div>
                     </a>
                 </div>
-                <h2 class="brand-before">
-                    <small>Welcome to</small>
-                </h2>
-                <h1 class="brand-name">Business Casual</h1>
-                <hr class="tagline-divider">
-                <h2>
-                    <small>By
-                        <strong>Start Bootstrap</strong>
-                    </small>
-                </h2>
+                <div class=" bottom-head">
+                    <a href="{{ url('search') }}">
+                        <div class="buy-media">
+                            <i class="rent"> </i>
+                            <h6>Rent</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="clearfix"> </div>
             </div>
         </div>
     </div>
-
-    <div class="row">
-        <div class="box">
-            <div class="col-lg-12">
-                <hr>
-                <h2 class="intro-text text-center">Build a website
-                    <strong>worth visiting</strong>
-                </h2>
-                <hr>
-                <img class="img-responsive img-border img-left" src="img/intro-pic.jpg" alt="">
-                <hr class="visible-xs">
-                <p>The boxes used in this template are nested inbetween a normal Bootstrap row and the start of your column layout. The boxes will be full-width boxes, so if you want to make them smaller then you will need to customize.</p>
-                <p>A huge thanks to <a href="http://join.deathtothestockphoto.com/" target="_blank">Death to the Stock Photo</a> for allowing us to use the beautiful photos that make this template really come to life. When using this template, make sure your photos are decent. Also make sure that the file size on your photos is kept to a minumum to keep load times to a minimum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="box">
-            <div class="col-lg-12">
-                <hr>
-                <h2 class="intro-text text-center">Beautiful boxes
-                    <strong>to showcase your content</strong>
-                </h2>
-                <hr>
-                <p>Use as many boxes as you like, and put anything you want in them! They are great for just about anything, the sky's the limit!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat diam quis nisl vestibulum dignissim. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            </div>
-        </div>
-    </div>
-
 </div>
-<!-- /.container -->
+<!--//-->
 
-<footer>
+<!--//header-bottom-->
+<!--//header-->
+<!--content-->
+<div class="content">
+ @yield('content')
+</div>
+<!--footer-->
+<div class="footer">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <p>Copyright &copy; Your Website 2014</p>
+        <div class="footer-top-at">
+            <div class="col-md-3 amet-sed">
+                <h4>Our Company</h4>
+                <ul class="nav-bottom">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">For Sale By Owner Blog</a></li>
+                    <li><a href="mobile_app.html">Mobile</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+
+                </ul>
             </div>
+            <div class="col-md-3 amet-sed ">
+                <h4>Work With Us</h4>
+                <ul class="nav-bottom">
+                    <li><a href="single.html">Real Estate Brokers</a></li>
+                    <li><a href="single.html">Business Development</a></li>
+                    <li><a href="single.html">Affiliate Programs</a></li>
+                    <li><a href="contact.html">Sitemap</a></li>
+                    <li><a href="career.html">Careers</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 amet-sed">
+                <h4>Customer Support</h4>
+                <p>Mon-Fri, 7AM-7PM </p>
+                <p>Sat-Sun, 8AM-5PM </p>
+                <p>177-869-6559</p>
+                <ul class="nav-bottom">
+                    <li><a href="#">Live Chat</a></li>
+                    <li><a href="faqs.html">Frequently Asked Questions</a></li>
+                    <li><a href="suggestion.html">Make a Suggestion</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 amet-sed ">
+                <h4>Property Services</h4>
+                <ul class="nav-bottom">
+                    <li><a href="single.html">Residential Property</a></li>
+                    <li><a href="single.html">Commercial Property</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="typo.html">Short Codes</a></li>
+                </ul>
+                <ul class="social">
+                    <li><a href="#"><i> </i></a></li>
+                    <li><a href="#"><i class="gmail"> </i></a></li>
+                    <li><a href="#"><i class="twitter"> </i></a></li>
+                    <li><a href="#"><i class="camera"> </i></a></li>
+                    <li><a href="#"><i class="dribble"> </i></a></li>
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
         </div>
     </div>
-</footer>
-
-<!-- jQuery -->
-<script src="{{ asset('js/jquery.js') }}"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="{{ asset('js/bootstrap.min.js') }}"></script>
-
-<!-- Script to Activate the Carousel -->
-<script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-</script>
-
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="col-md-4 footer-logo">
+                <h2><a href="{{ url('/') }}">REAL HOME</a></h2>
+            </div>
+            <div class="col-md-8 footer-class">
+                <p >© 2015 Real Home. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!--//footer-->
 </body>
-
 </html>

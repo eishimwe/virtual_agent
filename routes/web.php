@@ -11,7 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    //return view('home.home');
-    return view('master');
-});
+Route::get('/', ['uses' => 'HomeController@index']);
+
+Route::get('search', ['uses' => 'HomeController@search']);
