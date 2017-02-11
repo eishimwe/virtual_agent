@@ -22,12 +22,9 @@ class HomeController extends Controller
         $suburbs  = Suburb::pluck('name','id');
 
         //Retrieve all properties
-        $property = Property::find(1);
+        $properties = Property::with('propType')->get();
 
-        dd($property);
-
-
-        return view('search.search',compact('suburbs'));
+        return view('search.search',compact('suburbs','properties'));
 
     }
 

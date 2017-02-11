@@ -19,12 +19,12 @@ class CreatePropertiesTable extends Migration
             $table->integer('suburb_id')->unsigned();
             $table->integer('property_type_id')->unsigned();
             $table->foreign('suburb_id')->references('id')->on('suburbs');
-            $table->foreign('property_type_id')->references('id')->on('suburbs');
+            $table->foreign('property_type_id')->references('id')->on('property_types');
             $table->text('description');
+            $table->string('title');
+            $table->double('price');
             $table->boolean('active')->default(1);
             $table->timestamps();
-
-
 
         });
     }

@@ -18,4 +18,8 @@ class Property extends Model
 
         return $this->hasOne('App\PropertyType','id');
     }
+
+
+
+
 }
