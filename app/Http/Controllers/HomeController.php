@@ -16,7 +16,7 @@ class HomeController extends Controller
     }
 
 
-    function search() {
+    function listProperties(){
 
         //Retrieve all suburbs data
         $suburbs  = Suburb::pluck('name','id');
@@ -28,4 +28,15 @@ class HomeController extends Controller
 
     }
 
+    function getProperties(Request $request){
+
+        //Retrieve all suburbs data
+        $suburbs  = Suburb::pluck('name','id');
+
+        //Retrieve all properties
+        $properties = Property::with('propType')->where('suburb_id',$request['suburb'])->where('no_bedrooms',$request['no_bedroom'])->get();
+
+        return view('search.search',compact('suburbs','properties'));
+
+    }
 }

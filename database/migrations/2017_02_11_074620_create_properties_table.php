@@ -22,7 +22,8 @@ class CreatePropertiesTable extends Migration
             $table->foreign('property_type_id')->references('id')->on('property_types');
             $table->text('description');
             $table->string('title');
-            $table->double('price');
+            $table->float('price');
+            $table->decimal('no_bedrooms',5,1);
             $table->boolean('active')->default(1);
             $table->timestamps();
 

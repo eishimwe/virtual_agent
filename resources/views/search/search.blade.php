@@ -5,7 +5,7 @@
 <div class="container">
 
 
-
+ {!! Form::open(array('url' => 'search', 'method' => 'post')) !!}
     <!--price-->
     <div class="price">
         <div class="price-grid">
@@ -28,12 +28,12 @@
                 <h4>No of Bedrooms</h4>
 
                 {!! Form::selectRange('no_bedroom', 1, 10,null,['class' => 'in-drop'])  !!}
-
             </div>
-
         </div>
+        {!! Form::submit('Search',['class' => 'btn btn-primary']) !!}
     </div>
 
+     {!! Form::close() !!}
 </div>
 <!---->
 
@@ -53,7 +53,7 @@
                                 </div>
                                 <div class="col-md4">
                                     <strong>Venice</strong>
-                                    <small>50 Reviews</small>
+                                    <small>{{ $property->no_bedrooms }} Bedroom</small>
                                 </div>
                                 <div class="clearfix"> </div>
                             </div>

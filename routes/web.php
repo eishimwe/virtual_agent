@@ -13,4 +13,7 @@
 
 Route::get('/', ['uses' => 'HomeController@index']);
 
-Route::get('search', ['uses' => 'HomeController@search']);
+Route::get('search', ['uses' => 'HomeController@listProperties']);
+
+Route::post('search', ['uses' => 'HomeController@getProperties']);
+
