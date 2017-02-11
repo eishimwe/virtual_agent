@@ -36,8 +36,8 @@ class HomeController extends Controller
         $suburbs->put('0',"Any");
 
         //Retrieve all properties
-        $properties = Property::with('propType')->where('suburb_id',$request['suburb'])->where('no_bedrooms','>=',$request['no_bedroom'])->get();
-
+        $suburb = ($request['suburb'] == 0)?'%':$request['suburb'];
+        $properties = Property::with('propType')->where('suburb_id','like',$suburb)->where('no_bedrooms','>=',$request['no_bedroom'])->get();
         return view('search.search',compact('suburbs','properties'));
 
     }
