@@ -18,10 +18,10 @@
                 <h4>Price Range</h4>
 
                 <div id="priceSlider"></div>
-                {!! Form::text('minPrice', '',['class' => 'in-drop','id' =>'minPrice','disabled']) !!}
-                {!! Form::text('maxPrice', '',['class' => 'in-drop','id' =>'maxPrice','disabled']) !!}
-
-
+                {!! Form::label('R', 'R') !!}
+                {!! Form::text('minPrice', '',['class' => 'in-drop','id' =>'minPrice','readonly']) !!}
+                {!! Form::label('R', 'R') !!}
+                {!! Form::text('maxPrice', '',['class' => 'in-drop','id' =>'maxPrice','readonly']) !!}
 
             </div>
             <div class="clearfix"> </div>
