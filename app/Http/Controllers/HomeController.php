@@ -45,4 +45,9 @@ class HomeController extends Controller
         return view('search.search',compact('suburbs','properties'));
 
     }
+
+    function getProperty() {
+
+        return view('search.property');
+    }
 }
