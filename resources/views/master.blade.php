@@ -16,6 +16,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <script src="js/scripts.js"></script>
     <link href="css/styles.css" rel="stylesheet">
     <!--//menu-->
+
+    <!-- nouislider -->
+    <script src="js/nouislider.js"></script>
+    <link href="css/nouislider.css" rel="stylesheet">
+
+    <!--//nouislider-->
+
+
+
     <!--theme-style-->
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <!--//theme-style-->
@@ -135,6 +144,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
             <script>
                 $(document).ready(function() {
+
+                    var priceSlider = document.getElementById('priceSlider');
+
+                    noUiSlider.create(priceSlider, {
+                        connect: true,
+                        behaviour: 'tap',
+                        start: [ 500, 4000 ],
+                        range: {
+                            // Starting at 500, step the value by 500,
+                            // until 4000 is reached. From there, step by 1000.
+                            'min': [ 0 ],
+                            '10%': [ 0, 500 ],
+                            'max': [ 50000 ]
+                        }
+                    });
+
+                    var nodes = [
+                        document.getElementById('minPrice'), // 0
+                        document.getElementById('maxPrice')  // 1
+                    ];
+
+
+                    priceSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
+                        nodes[handle].value = values[handle];
+                    });
+
                     $('.popup-with-zoom-anim').magnificPopup({
                         type: 'inline',
                         fixedContentPos: false,

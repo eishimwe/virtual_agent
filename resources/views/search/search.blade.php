@@ -17,6 +17,9 @@
             <div class="col-sm-6 price-top1">
                 <h4>Price Range</h4>
 
+                <div id="priceSlider"></div>
+                {!! Form::text('minPrice', '',['class' => 'in-drop','id' =>'minPrice']) !!}
+                {!! Form::text('maxPrice', '',['class' => 'in-drop','id' =>'maxPrice']) !!}
 
 
 

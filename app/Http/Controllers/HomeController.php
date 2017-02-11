@@ -18,6 +18,8 @@ class HomeController extends Controller
 
     function listProperties(){
 
+        //https://refreshless.com/nouislider/examples/
+
         //Retrieve all suburbs data
         $suburbs  = Suburb::pluck('name','id');
         $suburbs->put('0',"Any");
