@@ -20,6 +20,7 @@ class HomeController extends Controller
 
         //Retrieve all suburbs data
         $suburbs  = Suburb::pluck('name','id');
+        $suburbs->put('0',"Any");
 
         //Retrieve all properties
         $properties = Property::with('propType')->get();
@@ -32,9 +33,10 @@ class HomeController extends Controller
 
         //Retrieve all suburbs data
         $suburbs  = Suburb::pluck('name','id');
+        $suburbs->put('0',"Any");
 
         //Retrieve all properties
-        $properties = Property::with('propType')->where('suburb_id',$request['suburb'])->where('no_bedrooms',$request['no_bedroom'])->get();
+        $properties = Property::with('propType')->where('suburb_id',$request['suburb'])->where('no_bedrooms','>=',$request['no_bedroom'])->get();
 
         return view('search.search',compact('suburbs','properties'));
 

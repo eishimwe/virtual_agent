@@ -10,7 +10,7 @@
     <div class="price">
         <div class="price-grid">
             <div class="col-sm-4 price-top">
-
+                <h4>Suburb</h4>
                 {!! Form::select('suburb',$suburbs,0,['class' => 'in-drop' ,'id' => 'suburb']) !!}
 
             </div>
@@ -27,7 +27,8 @@
             <div class="col-sm-4 price-top">
                 <h4>No of Bedrooms</h4>
 
-                {!! Form::selectRange('no_bedroom', 1, 10,null,['class' => 'in-drop'])  !!}
+                {!! Form::select('no_bedroom',["0" => "Any","1" => "1+",'2' => "2+","3" => "3+","4" => "4+","5" => "5+"],0,['class' => 'in-drop' ,'id' => 'no_bedroom']) !!}
+
             </div>
         </div>
         {!! Form::submit('Search',['class' => 'btn btn-primary']) !!}
