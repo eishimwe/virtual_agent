@@ -1,0 +1,17 @@
+{
+  "name": "wendy vertual agent",
+  "homepage": "https://github.com/elieishimwe/virtual_agent",
+  "description": "estate properties",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "seiyria-bootstrap-slider": "^9.7.1"
+  }
+}
