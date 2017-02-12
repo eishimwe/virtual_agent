@@ -12,6 +12,7 @@
     "tests"
   ],
   "dependencies": {
-    "seiyria-bootstrap-slider": "^9.7.1"
+    "seiyria-bootstrap-slider": "^9.7.1",
+    "gentelella": "^1.4.0"
   }
 }

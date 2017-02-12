@@ -12,7 +12,7 @@ class HomeController extends Controller
 
     function index(){
 
-       return view('home.home');
+        return view('home.home');
     }
 
 
@@ -36,19 +36,24 @@ class HomeController extends Controller
 
         //Retrieve all properties
         $suburb     = ($request['suburb'] == 0)?'%':$request['suburb'];
-        $min_price = $request['minPrice'];
+        $min_price  = $request['minPrice'];
         $max_price  = $request['maxPrice'];
         $properties = Property::with('propType')->where('suburb_id','like',$suburb)
-                                                ->where('no_bedrooms','>=',$request['no_bedroom'])
-                                                ->whereBetween('price',[$min_price,$max_price])
-                                                ->get();
+            ->where('no_bedrooms','>=',$request['no_bedroom'])
+            ->whereBetween('price',[$min_price,$max_price])
+            ->get();
         return view('search.search',compact('suburbs','properties'));
 
     }
 
     function getProperty($id) {
 
-      $property = Property::with('propType')->where('id',$id)->first();
+        $property = Property::with('propType')->where('id',$id)->first();
         return view('search.property',compact('property'));
+    }
+
+    function backend() {
+
+        return view('backend');
     }
 }

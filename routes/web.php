@@ -19,3 +19,9 @@ Route::post('search', ['uses' => 'HomeController@getProperties']);
 
 Route::get('viewDetail/{id}', ['uses' => 'HomeController@getProperty']);
 
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Route::get('/backend', 'HomeController@backend');
+
