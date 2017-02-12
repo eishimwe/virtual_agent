@@ -8,25 +8,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
     <title>Real Home A Real Estate Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.min.js"></script>
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
     <!-- Custom Theme files -->
     <!--menu-->
-    <script src="js/scripts.js"></script>
-    <link href="css/styles.css" rel="stylesheet">
+    <script src="{{ asset('js/scripts.js') }}"></script>
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
     <!--//menu-->
 
     <!-- nouislider -->
-    <script src="js/nouislider.js"></script>
-    <link href="css/nouislider.css" rel="stylesheet">
+    <script src="{{ asset('js/nouislider.js') }}"></script>
+    <link href="{{ asset('css/nouislider.css') }}" rel="stylesheet">
 
     <!--//nouislider-->
 
 
 
     <!--theme-style-->
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" media="all" />
     <!--//theme-style-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -34,7 +34,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- slide -->
-    <script src="js/responsiveslides.min.js"></script>
+    <script src="{{ asset('js/responsiveslides.min.js') }}"></script>
     <script>
         $(function () {
             $("#slider").responsiveSlides({
@@ -90,8 +90,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="clearfix"> </div>
             <!---pop-up-box---->
 
-            <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
-            <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+            <link href="{{ asset('css/popuo-box.css') }}" rel="stylesheet" type="text/css" media="all"/>
+            <script src="{{ asset('js/jquery.magnific-popup.js') }}" type="text/javascript"></script>
             <!---//pop-up-box---->
             <div id="small-dialog" class="mfp-hide">
                 <!----- tabs-box ---->
@@ -130,7 +130,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                         </div>
                     </div>
-                    <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+                    <script src="{{ asset('js/easyResponsiveTabs.js') }}" type="text/javascript"></script>
                     <script type="text/javascript">
                         $(document).ready(function () {
                             $('#horizontalTab').easyResponsiveTabs({

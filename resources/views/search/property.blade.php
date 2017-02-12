@@ -11,23 +11,23 @@
                 <div class=" buying-top">
                     <div class="flexslider">
                         <ul class="slides">
-                            <li data-thumb="images/ss.jpg">
-                                <img src="images/ss.jpg" />
+                            <li data-thumb="{{ url('images/ss.jpg') }}">
+                                <img src="{{ url('images/ss.jpg') }}" />
                             </li>
-                            <li data-thumb="images/ss1.jpg">
-                                <img src="images/ss1.jpg" />
+                            <li data-thumb="{{ url('images/ss1.jpg') }}">
+                                <img src="{{ url('images/ss1.jpg') }}" />
                             </li>
-                            <li data-thumb="images/ss2.jpg">
-                                <img src="images/ss2.jpg" />
+                            <li data-thumb="{{ url('images/ss2.jpg') }}">
+                                <img src="{{ url('images/ss2.jpg') }}" />
                             </li>
-                            <li data-thumb="images/ss3.jpg">
-                                <img src="images/ss3.jpg" />
+                            <li data-thumb="{{ url('images/ss3.jpg') }}">
+                                <img src="{{ url('images/ss3.jpg') }}" />
                             </li>
                         </ul>
                     </div>
                     <!-- FlexSlider -->
-                    <script defer src="js/jquery.flexslider.js"></script>
-                    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+                    <script defer src="{{ asset('js/jquery.flexslider.js') }}"></script>
+                    <link rel="stylesheet" href="{{ asset('css/flexslider.css') }}" type="text/css" media="screen" />
 
                     <script>
                         // Can also be used with $(document).ready()
@@ -42,20 +42,16 @@
                 <div class="buy-sin-single">
                     <div class="col-sm-5 middle-side immediate">
                         <h4>Possession: Immediate</h4>
-                        <p><span class="bath">Bed </span>: <span class="two">2 BHK</span></p>
-                        <p>  <span class="bath1">Baths </span>: <span class="two">2</span></p>
-                        <p><span class="bath2">Built-up Area</span>: <span class="two">100 Sq.Yrds</span></p>
-                        <p><span class="bath3">Plot Area </span>:<span class="two"> 150 Sq.Yrds</span></p>
-                        <p><span class="bath4">Age of property</span> : <span class="two">4 - 10 Years</span></p>
-                        <p><span class="bath5">Price </span>:<span class="two"> 30-40 Lacs</span></p>
+                        <p><span class="bath">Bed </span>: <span class="two">{{ $property->no_bedrooms }}</span></p>
+                        <p><span class="bath5">Price </span>:<span class="two">R {{ $property->price }}</span></p>
                         <div class="   right-side">
-                            <a href="contact.html" class="hvr-sweep-to-right more" >Contact Builder</a>
+                            <a href="contact.html" class="hvr-sweep-to-right more" >Contact Agent</a>
                         </div>
                     </div>
                     <div class="col-sm-7 buy-sin">
                         <h4>Description</h4>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature</p>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC </p>
+                        <p>{{ $property->description }}</p>
+
                     </div>
                     <div class="clearfix"> </div>
                 </div>

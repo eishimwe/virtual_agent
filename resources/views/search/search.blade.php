@@ -63,7 +63,7 @@
                             </div>
                             <p>{{ $property->title }}</p>
                             <p class="cost">R {{ $property->price }}</p>
-                            <a href="{{ url('viewDetail') }}" class="hvr-sweep-to-right more">See Details</a>
+                            <a href="{{ url('viewDetail/'.$property->id) }}" class="hvr-sweep-to-right more">See Details</a>
                         </div>
                     </div>
                 </div>
