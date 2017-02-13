@@ -24,6 +24,8 @@
     <!-- Custom Theme Style -->
     <link href="{{ asset('css/custom.min.css') }}" rel="stylesheet">
 
+    <link href="{{ asset('css/form.css') }}" rel="stylesheet">
+
     <!-- Datatables -->
     <link href="{{ asset('css/dataTables.bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/buttons.bootstrap.min.css') }}" rel="stylesheet">
@@ -264,6 +266,7 @@
 <script src="{{ asset('js/backend/jszip.min.js') }}"></script>
 <script src="{{ asset('js/backend/pdfmake.min.js') }}"></script>
 <script src="{{ asset('js/backend/vfs_fonts.js') }}"></script>
+<script src="{{ asset('js/backend/fileupload.min.js') }}"></script>
 
 @yield('custom_js')
 

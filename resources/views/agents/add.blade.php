@@ -33,7 +33,20 @@
                     </div>
                     <div class="x_content">
                         <br />
-                        {!! Form::open(array('url' => 'save_agent', 'method' => 'post','class' => 'form-horizontal form-label-left')) !!}
+                        {!! Form::open(array('url' => 'save_agent', 'method' => 'post','class' => 'form-horizontal form-label-left','files' => TRUE)) !!}
+
+                            <div class="fileupload fileupload-new" data-provides="fileupload">
+                                <div class="fileupload-preview thumbnail form-control"></div>
+
+                                <div>
+                                            <span class="btn btn-file btn-alt btn-sm">
+                                                <span class="fileupload-new">Select image</span>
+                                                <span class="fileupload-exists">Change</span>
+                                                {!! Form::file('agent_profile_file') !!}
+                                            </span>
+                                    <a href="#" class="btn fileupload-exists btn-sm" data-dismiss="fileupload">Remove</a>
+                                </div>
+                            </div>
 
                             <div class="form-group @if ($errors->has('first_name')) bad @endif">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">First Name <span class="required">*</span>
