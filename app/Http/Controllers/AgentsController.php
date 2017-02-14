@@ -93,7 +93,7 @@ class AgentsController extends Controller
 
         $agent               = Agent::find($request['agent_id']);
 
-        $lead                = new Agent();
+        $lead                = new Lead();
         $lead->first_name    = $request['first_name'];
         $lead->last_name     = $request['last_name'];
         $lead->subject       = $request['subject'];
