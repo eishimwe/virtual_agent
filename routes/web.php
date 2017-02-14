@@ -35,6 +35,13 @@ Route::get('add_agent',['uses' => 'AgentsController@add_agent']);
 
 Route::post('save_agent',['uses' => 'AgentsController@save_agent']);
 
+Route::get('list-properties', ['uses' => 'PropertiesController@list_properties']);
+
+Route::get('properties-list-data',['uses' => 'PropertiesController@list_properties_data']);
+
+Route::get('add_property',['uses' => 'PropertiesController@add_property']);
+
+
 
 
 

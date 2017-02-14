@@ -65,8 +65,9 @@
                         <h3>General</h3>
                         <ul class="nav side-menu">
                             <li><a><i class="fa fa-home"></i> Administration <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
+                                <ul class="nav child_menu" style="display: block;">
                                     <li><a href="{{ url('list-agents') }}">Manage Agents</a></li>
+                                    <li><a href="{{ url('list-properties') }}">Manage Listings</a></li>
 
                                 </ul>
                             </li>

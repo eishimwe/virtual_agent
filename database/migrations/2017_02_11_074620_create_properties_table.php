@@ -18,10 +18,13 @@ class CreatePropertiesTable extends Migration
             $table->increments('id');
             $table->integer('suburb_id')->unsigned();
             $table->integer('property_type_id')->unsigned();
+            $table->integer('agent_id')->unsigned();
             $table->foreign('suburb_id')->references('id')->on('suburbs');
             $table->foreign('property_type_id')->references('id')->on('property_types');
+            $table->foreign('agent_id')->references('id')->on('agents');
             $table->text('description');
             $table->string('title');
+            $table->string('ref_number');
             $table->float('price');
             $table->decimal('no_bedrooms',5,1);
             $table->boolean('active')->default(1);
