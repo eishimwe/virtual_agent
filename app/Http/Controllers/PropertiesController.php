@@ -53,7 +53,8 @@ class PropertiesController extends Controller
 
         $imageName = $_FILES['property_file']['name'];
 
-        $request->file('property_file')->move(base_path() . '/public/images/agent/properties/'.property->id.'/', $imageName);
+        $request->file('property_file')->move(base_path() . '/public/images/agent/properties/'.$property->id.'/', $imageName);
+
 
         \Session::flash('agent_success', 'well done! Agent '.$request['first_name'].' has been successfully added!');
 
