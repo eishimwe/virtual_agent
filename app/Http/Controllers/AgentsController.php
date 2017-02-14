@@ -6,6 +6,7 @@ use App\Http\Requests;
 use App\Http\Requests\AgentRequest;
 use Yajra\Datatables\Facades\Datatables;
 use App\Agent;
+use App\Lead;
 
 
 
@@ -83,9 +84,40 @@ class AgentsController extends Controller
 
     }
 
-    function contact() {
+    function contact($agent_id) {
 
-        return view('agents.contact');
+        return view('agents.contact',compact('agent_id'));
+    }
+
+    function save_lead(Request $request) {
+
+        $agent               = Agent::find($request['agent_id']);
+
+        $lead                = new Agent();
+        $lead->first_name    = $request['first_name'];
+        $lead->last_name     = $request['last_name'];
+        $lead->subject       = $request['subject'];
+        $lead->email         = $request['email'];
+        $lead->description   = $request['description'];
+        $lead->property_id   = 1;
+        $lead->agent_id      = $agent->id;
+        $lead->save();
+
+        $data = array(
+            'first_name'    => $request['first_name'],
+            'last_name'     => $request['last_name'],
+            'subject'       => $request['subject'],
+            'email'         => $request['email'],
+            'description'   => $request['description'],
+            'agent_name'    => $agent->first_name
+
+        );
+
+      /*  \Mail::send('emails.contact', $data, function ($message) use($agent) {
+            $message->from('info@wendy.co.za', 'Wendy Properties');
+            $message->to($agent->email)->subject("Wendy Properties - Ref: ");
+
+        });*/
     }
 
 

@@ -45,6 +45,10 @@ Route::post('save_property',['uses' => 'PropertiesController@save_property']);
 
 Route::get('contact/{id}',['uses' => 'AgentsController@contact']);
 
+Route::post('save_lead',['uses' => 'AgentsController@save_lead']);
+
+
+
 
 
 

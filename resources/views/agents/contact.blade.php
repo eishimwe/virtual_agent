@@ -9,8 +9,8 @@
 
             <div class="col-md-6 contact-right">
 
-                {!! Form::open(array('url' => 'contact_agent', 'method' => 'post')) !!}
-
+                {!! Form::open(array('url' => 'save_lead', 'method' => 'post')) !!}
+                    {!! Form::hidden('agent_id',$agent_id,['id' => 'agent_id']) !!}
                     {!! Form::text('first_name',NULL,['placeholder' => 'First Name','id' => 'first_name']) !!}
                     {!! Form::text('last_name',NULL,['placeholder' => 'Last Name','id' => 'last_name']) !!}
                     {!! Form::text('subject',NULL,['placeholder' => 'Subject','id' => 'subject']) !!}
