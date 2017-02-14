@@ -64,7 +64,7 @@ class AgentsController extends Controller
 
                 \File::makeDirectory(public_path().'/'.$target_file_directory,0777,true);
 
-                move_uploaded_file($_FILES["agent_profile_file"]["tmp_name"],$img_url);
+                //move_uploaded_file($_FILES["agent_profile_file"]["tmp_name"],$img_url);
                 $agent = Agent::find($agent->id);
                 $agent->photo_url = $img_url;
                 $agent->save();

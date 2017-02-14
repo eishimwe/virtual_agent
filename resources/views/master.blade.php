@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Real Home A Real Estate Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
+    <title>The Virtual Agent - Wendy Properties</title>
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="{{ asset('js/jquery.min.js') }}"></script>
@@ -69,12 +69,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="container">
         <!--logo-->
         <div class="logo">
-            <h1><a href="{{ url('/') }}">REAL HOME</a></h1>
+            <h1><a href="{{ url('/') }}">Wendy Properties</a></h1>
         </div>
         <!--//logo-->
         <div class="top-nav">
             <ul class="right-icons">
-                <li><span ><i class="glyphicon glyphicon-phone"> </i>+1384 757 546</span></li>
+                <li><span ><i class="glyphicon glyphicon-phone"> </i>+27829699114</span></li>
                 <li><a  href="{{ url('login') }}"><i class="glyphicon glyphicon-user"> </i>Login</a></li>
                 <li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a></li>
 
@@ -199,16 +199,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <li>
                         <div class="banner1">
                             <div class="caption">
-                                <h3><span>vivam</span>us site</h3>
-                                <p>Nunc dignissim risus idi</p>
+
                             </div>
                         </div>
                     </li>
                     <li>
                         <div class="banner2">
                             <div class="caption">
-                                <h3><span>vivam</span>us site</h3>
-                                <p>Nunc dignissim risus idi</p>
+
                             </div>
                         </div>
                     </li>
@@ -231,14 +229,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="container">
         <div class="bottom-header">
             <div class="header-bottom">
-                <div class=" bottom-head">
-                    <a href="{{ url('search') }}">
-                        <div class="buy-media">
-                            <i class="buy"> </i>
-                            <h6>Buy</h6>
-                        </div>
-                    </a>
-                </div>
+
                 <div class=" bottom-head">
                     <a href="{{ url('search') }}">
                         <div class="buy-media">

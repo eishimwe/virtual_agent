@@ -12,7 +12,13 @@ class HomeController extends Controller
 
     function index(){
 
+        //Retrieve all suburbs data
+        $suburbs  = Suburb::pluck('name','id');
+        $suburbs->put('0',"Any");
+
         return view('home.home');
+
+        //return view('search.search',compact('suburbs'));
     }
 
 

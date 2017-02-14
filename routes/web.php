@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', ['uses' => 'HomeController@index']);
+Route::get('/', ['uses' => 'HomeController@listProperties']);
 
 Route::get('search', ['uses' => 'HomeController@listProperties']);
 
@@ -40,6 +40,8 @@ Route::get('list-properties', ['uses' => 'PropertiesController@list_properties']
 Route::get('properties-list-data',['uses' => 'PropertiesController@list_properties_data']);
 
 Route::get('add_property',['uses' => 'PropertiesController@add_property']);
+
+Route::post('save_property',['uses' => 'PropertiesController@save_property']);
 
 
 

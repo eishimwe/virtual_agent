@@ -48,6 +48,27 @@
                                 </div>
                             </div>
 
+                            <div class="form-group @if ($errors->has('title')) bad @endif">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Title <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+
+                                    {!! Form::text ('title',NULL,['class' => 'form-control col-md-7 col-xs-12','id' => 'title']) !!}
+
+                                </div>
+                            </div>
+
+                            <div class="form-group @if ($errors->has('description')) bad @endif">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Description <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+
+                                    {!! Form::textarea('description', null, ['class' => 'form-control','id' => 'description','size' => '30x5']) !!}
+
+                                </div>
+                            </div>
+
+
                             <div class="form-group @if ($errors->has('price')) bad @endif">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Price <span class="required">*</span>
                                 </label>
@@ -65,13 +86,6 @@
 
                                 </div>
                             </div>
-                            <div class="form-group @if ($errors->has('cellphone')) bad @endif">
-                                <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Cellphone <span class="required">*</span></label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    {!! Form::text('cellphone',NULL,['class' => 'form-control col-md-7 col-xs-12','id' => 'cellphone']) !!}
-
-                                </div>
-                            </div>
 
                             <div class="form-group @if ($errors->has('ref_number')) bad @endif">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Owner Reference Number <span class="required">*</span>
@@ -82,15 +96,6 @@
                                 </div>
                             </div>
 
-                            <div class="form-group @if ($errors->has('description')) bad @endif">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Description <span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-
-                                    {!! Form::textarea('description', null, ['class' => 'form-control','id' => 'description','size' => '30x5']) !!}
-
-                                </div>
-                            </div>
 
                             <div class="form-group @if ($errors->has('suburb')) bad @endif">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Suburb <span class="required">*</span>
@@ -98,6 +103,16 @@
                                 <div class="col-md-6 col-sm-6 col-xs-12">
 
                                     {!! Form::select('suburb',$suburbs,0,['class' => 'form-control' ,'id' => 'suburb']) !!}
+
+                                </div>
+                            </div>
+
+                            <div class="form-group @if ($errors->has('agent')) bad @endif">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Agent <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+
+                                    {!! Form::select('agent',$agents,0,['class' => 'form-control' ,'id' => 'agent']) !!}
 
                                 </div>
                             </div>
