@@ -83,5 +83,10 @@ class AgentsController extends Controller
 
     }
 
+    function contact() {
+
+        return view('agents.contact');
+    }
+
 
 }
