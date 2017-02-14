@@ -42,6 +42,8 @@
                 <div class="buy-sin-single">
                     <div class="col-sm-5 middle-side immediate">
                         <h4>Possession: Immediate</h4>
+                        <p>{{ $property->title }}</p>
+                        <p><span class="bath5">Ref </span>: <span class="two">{{ $property->ref_number }}</span></p>
                         <p><span class="bath">Bed </span>: <span class="two">{{ $property->no_bedrooms }}</span></p>
                         <p><span class="bath5">Price </span>:<span class="two">R {{ $property->price }}</span></p>
                         <div class="   right-side">

@@ -43,7 +43,7 @@
 
 <div class="project">
     <div class="container">
-        <h3>Property for --  Sale -- in -- suburb --</h3>
+        <h3>Wendy properties</h3>
         <div class="project-top">
 
             @foreach ($properties as $property)
@@ -53,10 +53,10 @@
                         <div class="col-md1">
                             <div class="col-md2">
                                 <div class="col-md3">
-                                    <span class="star"> 4.5</span>
+
                                 </div>
                                 <div class="col-md4">
-                                    <strong>Venice</strong>
+                                    <strong>{{ $property->title }}</strong>
                                     <small>{{ $property->no_bedrooms }} Bedroom</small>
                                 </div>
                                 <div class="clearfix"> </div>

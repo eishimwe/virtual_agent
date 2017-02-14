@@ -42,7 +42,7 @@
                                             <span class="btn btn-file btn-alt btn-sm">
                                                 <span class="fileupload-new">Select image</span>
                                                 <span class="fileupload-exists">Change</span>
-                                                {!! Form::file('agent_profile_file') !!}
+                                                {!! Form::file('property_file') !!}
                                             </span>
                                     <a href="#" class="btn fileupload-exists btn-sm" data-dismiss="fileupload">Remove</a>
                                 </div>

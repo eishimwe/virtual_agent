@@ -51,25 +51,13 @@ class PropertiesController extends Controller
         $property->property_type_id         = 2;//2 = Flats
         $property->save();
 
-       /* if ($request['agent_profile_file']) {
+        $imageName = $_FILES['property_file']['name'];
 
-            $file_name             = $_FILES['agent_profile_file']['name'];
-            $img_url               = "/images/agent/profile/$agent->id/" . $file_name;
-            $target_file_directory = "/images/agent/profile/$agent->id/";
+        $request->file('property_file')->move(base_path() . '/public/images/agent/properties/'.property->id.'/', $imageName);
 
-            if (!is_dir($target_file_directory)) {
-
-                \File::makeDirectory(public_path().'/'.$target_file_directory,0777,true);
-
-                move_uploaded_file($_FILES["agent_profile_file"]["tmp_name"],$img_url);
-                $agent = Agent::find($agent->id);
-                $agent->photo_url = $img_url;
-                $agent->save();
-
-            }
+        \Session::flash('agent_success', 'well done! Agent '.$request['first_name'].' has been successfully added!');
 
 
-        }*/
 
         \Session::flash('property_success', 'well done! Property '.$request['ref_number'].' has been successfully added!');
 
