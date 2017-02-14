@@ -52,9 +52,9 @@ class HomeController extends Controller
 
     }
 
-    function getProperty($id) {
+    function getProperty($property,$agent) {
 
-        $property = Property::with('propType')->where('id',$id)->first();
+        $property = Property::with('propType')->where('id',$property)->first();
         return view('search.property',compact('property'));
     }
 

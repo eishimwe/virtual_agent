@@ -17,7 +17,7 @@ Route::get('search', ['uses' => 'HomeController@listProperties']);
 
 Route::post('search', ['uses' => 'HomeController@getProperties']);
 
-Route::get('viewDetail/{id}', ['uses' => 'HomeController@getProperty']);
+Route::get('viewDetail/{property}/{agent}', ['uses' => 'HomeController@getProperty']);
 
 Auth::routes();
 
@@ -43,7 +43,7 @@ Route::get('add_property',['uses' => 'PropertiesController@add_property']);
 
 Route::post('save_property',['uses' => 'PropertiesController@save_property']);
 
-Route::get('contact/{id}',['uses' => 'AgentsController@contact']);
+Route::get('contact/{property}/{agent}',['uses' => 'AgentsController@contact']);
 
 Route::post('save_lead',['uses' => 'AgentsController@save_lead']);
 

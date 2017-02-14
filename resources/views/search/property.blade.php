@@ -45,7 +45,7 @@
                         <p><span class="bath">Bed </span>: <span class="two">{{ $property->no_bedrooms }}</span></p>
                         <p><span class="bath5">Price </span>:<span class="two">R {{ $property->price }}</span></p>
                         <div class="   right-side">
-                            <a href="{{ url('contact/'.$property->agent_id) }}" class="hvr-sweep-to-right more" >Contact Agent</a>
+                            <a href="{{ url('contact/'.$property->id.'/'.$property->agent_id) }}" class="hvr-sweep-to-right more" >Contact Agent</a>
                         </div>
                     </div>
                     <div class="col-sm-7 buy-sin">

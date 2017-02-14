@@ -11,6 +11,7 @@
 
                 {!! Form::open(array('url' => 'save_lead', 'method' => 'post')) !!}
                     {!! Form::hidden('agent_id',$agent_id,['id' => 'agent_id']) !!}
+                    {!! Form::hidden('property_id',$property_id,['id' => 'property_id']) !!}
                     {!! Form::text('first_name',NULL,['placeholder' => 'First Name','id' => 'first_name']) !!}
                     {!! Form::text('last_name',NULL,['placeholder' => 'Last Name','id' => 'last_name']) !!}
                     {!! Form::text('subject',NULL,['placeholder' => 'Subject','id' => 'subject']) !!}

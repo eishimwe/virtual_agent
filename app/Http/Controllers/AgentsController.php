@@ -84,9 +84,9 @@ class AgentsController extends Controller
 
     }
 
-    function contact($agent_id) {
+    function contact($property_id,$agent_id) {
 
-        return view('agents.contact',compact('agent_id'));
+        return view('agents.contact',compact('agent_id','property_id'));
     }
 
     function save_lead(Request $request) {
@@ -99,7 +99,7 @@ class AgentsController extends Controller
         $lead->subject       = $request['subject'];
         $lead->email         = $request['email'];
         $lead->description   = $request['description'];
-        $lead->property_id   = 1;
+        $lead->property_id   = $request['property_id'];
         $lead->agent_id      = $agent->id;
         $lead->save();
 
