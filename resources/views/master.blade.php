@@ -76,7 +76,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <ul class="right-icons">
                 <li><span ><i class="glyphicon glyphicon-phone"> </i>+27829699114</span></li>
                 <li><a  href="{{ url('login') }}"><i class="glyphicon glyphicon-user"> </i>Login</a></li>
-                <li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a></li>
+                <li><a class="play-icon popup-with-zoom-anim" href="{{ url('search') }}"><i class="glyphicon glyphicon-search"> </i> </a></li>
 
             </ul>
             <div class="nav-icon">
@@ -211,12 +211,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </div>
                     </li>
                     <li>
-                        <div class="banner3">
-                            <div class="caption">
-                                <h3><span>vivam</span>us site</h3>
-                                <p>Nunc dignissim risus idi</p>
-                            </div>
-                        </div>
+
+
                     </li>
                 </ul>
             </div>

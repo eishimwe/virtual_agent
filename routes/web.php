@@ -47,6 +47,13 @@ Route::get('contact/{property}/{agent}',['uses' => 'AgentsController@contact']);
 
 Route::post('save_lead',['uses' => 'AgentsController@save_lead']);
 
+Route::get('list-leads', ['uses' => 'LeadsController@list_leads']);
+
+Route::get('leads-list-data',['uses' => 'LeadsController@list_leads_data']);
+
+
+
+
 
 
 
