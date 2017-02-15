@@ -57,6 +57,9 @@ class PropertiesController extends Controller
 
             $request->file('property_file')->move(base_path() . '/public/images/agent/properties/'.$property->id.'/', $imageName);
 
+            $propertyObj =Property::find($property->id);
+            $propertyObj->photo_url = "/images/agent/properties/$property->id/$imageName";
+            $propertyObj->save();
 
         }
 
