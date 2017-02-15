@@ -44,7 +44,11 @@ class AgentsController extends Controller
 
         $imageName = $_FILES['agent_profile_file']['name'];
 
-        $request->file('agent_profile_file')->move(base_path() . '/public/images/agent/profile/'.$agent->id.'/', $imageName);
+        if($request->file('agent_profile_file')) {
+
+            $request->file('agent_profile_file')->move(base_path() . '/public/images/agent/profile/'.$agent->id.'/', $imageName);
+
+        }
 
         \Session::flash('agent_success', 'well done! Agent '.$request['first_name'].' has been successfully added!');
 

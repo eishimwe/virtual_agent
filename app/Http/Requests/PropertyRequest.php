@@ -23,17 +23,16 @@ class PropertyRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-            //
+
+
+      return [
+
+            'title'          =>'required',
+            'description'    =>'required',
+            'price'          =>'required|numeric',
+            'no_bedrooms'    =>'required|numeric',
+            'no_bedrooms'    =>'required|not_in:0',
+
         ];
-
-    /*    return [
-
-            'first_name'    =>'required',
-            'last_name'     =>'required',
-            'cellphone'     =>'required|not_in:0|digits:10|unique:agents,cellphone',
-            'email'         =>'email|unique:agents,email',
-
-        ];*/
     }
 }
