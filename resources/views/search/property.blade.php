@@ -12,7 +12,7 @@
                     <div class="flexslider">
                         <ul class="slides">
                             <li data-thumb="{{ url('images/ss.jpg') }}">
-                                <img src="{{ url('$property->photo_url') }}" />
+                                <img src="{{  $property->photo_url }}" />
                             </li>
 
                         </ul>
