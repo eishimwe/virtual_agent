@@ -31,9 +31,9 @@ class PropertiesController extends Controller
 
     function list_properties_data() {
 
-        $properties = Property::select(array('id','description','title','price','no_bedrooms'));
+        $properties = Property::select(array('id','description','title','price','no_bedrooms','ref_number'));
         return \Datatables::of($properties)
-            ->addColumn('actions','<a class="btn btn-xs btn-alt" data-toggle="modal"  data-target=".modalEditDepartment">Edit</a>')
+            ->addColumn('actions','<a class="btn btn-xs btn-alt" data-toggle="modal" >Edit</a>')
             ->make(true);
 
     }

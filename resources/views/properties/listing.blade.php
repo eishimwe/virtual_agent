@@ -47,11 +47,11 @@
                                 <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Cellphone</th>
-                                    <th>Email</th>
-                                    <th>Actions</th>
+                                    <th>Description</th>
+                                    <th>Title</th>
+                                    <th>Price</th>
+                                    <th>Ref Number</th>
+
 
                                 </tr>
                                 </thead>
@@ -85,7 +85,7 @@
                     {data: 'description', name: 'description'},
                     {data: 'title', name: 'title'},
                     {data: 'price', name: 'price'},
-                    {data: 'actions',  name: 'actions'},
+                    {data: 'ref_number',  name: 'ref_number'},
                 ],
 
                 "aoColumnDefs": [
