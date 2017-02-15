@@ -56,6 +56,8 @@ class PropertiesController extends Controller
         if($request->file('property_file')) {
 
             $request->file('property_file')->move(base_path() . '/public/images/agent/properties/'.$property->id.'/', $imageName);
+
+
         }
 
 

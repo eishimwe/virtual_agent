@@ -28,8 +28,7 @@ class PropertyRequest extends FormRequest
       return [
 
             'title'          =>'required',
-            'description'    =>'required',
-            'price'          =>'required|numeric',
+            'price'          =>'required',
             'no_bedrooms'    =>'required|numeric',
             'no_bedrooms'    =>'required|not_in:0',
 

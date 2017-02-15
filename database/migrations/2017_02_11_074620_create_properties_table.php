@@ -23,6 +23,7 @@ class CreatePropertiesTable extends Migration
             $table->foreign('property_type_id')->references('id')->on('property_types');
             $table->foreign('agent_id')->references('id')->on('agents');
             $table->text('description');
+            $table->text('photo_url');
             $table->string('title');
             $table->string('ref_number');
             $table->float('price');

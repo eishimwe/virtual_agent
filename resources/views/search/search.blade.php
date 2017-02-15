@@ -49,7 +49,7 @@
             @foreach ($properties as $property)
                 <div class="col-md-3 project-grid">
                     <div class="project-grid-top">
-                        <a href="single.html" class="mask"><img src="images/ga.jpg" class="img-responsive zoom-img" alt=""/></a>
+                        <a href="single.html" class="mask"><img src="{{ $property->photo_url }}" class="img-responsive zoom-img" alt=""/></a>
                         <div class="col-md1">
                             <div class="col-md2">
                                 <div class="col-md3">
