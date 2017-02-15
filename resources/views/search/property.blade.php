@@ -14,15 +14,7 @@
                             <li data-thumb="{{ url('images/ss.jpg') }}">
                                 <img src="{{ url('images/ss.jpg') }}" />
                             </li>
-                            <li data-thumb="{{ url('images/ss1.jpg') }}">
-                                <img src="{{ url('images/ss1.jpg') }}" />
-                            </li>
-                            <li data-thumb="{{ url('images/ss2.jpg') }}">
-                                <img src="{{ url('images/ss2.jpg') }}" />
-                            </li>
-                            <li data-thumb="{{ url('images/ss3.jpg') }}">
-                                <img src="{{ url('images/ss3.jpg') }}" />
-                            </li>
+
                         </ul>
                     </div>
                     <!-- FlexSlider -->
